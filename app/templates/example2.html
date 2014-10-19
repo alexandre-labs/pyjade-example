@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>teste com jinja</title>
+    </head>
+    <body>
+    	{% if nomes %}
+    		{% for nome in nomes %}
+    			<p>
+    				{{ nome }}
+    			</p>
+    		{% endfor %}
+    	{% endif %}
+    </body>
+</html>

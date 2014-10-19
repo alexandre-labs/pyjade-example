@@ -1,0 +1,13 @@
+- macro dict_2_table(dados)
+  table
+    thead
+      tr
+        - for k in dados.keys()
+          th
+            =k
+    tbody
+      - for _list in dados.values()
+        tr
+          - for item in _list
+            td
+              =item
